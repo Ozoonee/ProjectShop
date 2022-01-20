@@ -9,7 +9,6 @@ public class ProjectShop {
         Seller kassir = new Seller("Olga", "female", 22, "ProfessionalSchool");
         Seller kassir2 = new Seller("Anna", "female", 24, "MiddleSchool");
         Worker mover = new Worker("Ivan", "male", 40, "MiddleSchool");
-        director.takeVacation();
-        manager.takeVacation();
+        director.hire("S");
     }
 }

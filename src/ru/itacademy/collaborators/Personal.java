@@ -48,4 +48,3 @@ public abstract class Personal {
 
     public abstract void greeting();
 }
-

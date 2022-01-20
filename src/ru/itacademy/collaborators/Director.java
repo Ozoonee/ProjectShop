@@ -1,30 +1,42 @@
 package ru.itacademy.collaborators;
 
 public class Director extends Personal implements ActionsWithPersonnel {
-
     public Director(String name, String gender, int age, String education) {
         super(name, gender, age, education);
-    }
-
-    public void hire() {
-        System.out.println("Нанять на работу нового сотрудника");
-    }
-
-    public void promotion() {
-        System.out.println("Повысить сотрудника");
-    }
-
-    public void fire() {
-        System.out.println("Уволить сотрудника");
-    }
-
-    public void executionOfDocuments() {
-        System.out.println("Работа с документацией");
     }
 
     @Override
     public void greeting() {
         System.out.println("Добрый день, меня зовут " + getName() + ", я директор этого магазина.");
+    }
+
+    public void hire(String newCollaborator){
+        switch (newCollaborator) {
+            case "M":
+                Manager manager2 = new Manager("", "", 0, "");
+                System.out.println("Новый менеджер нанят на работу.");
+                break;
+            case "S":
+                Seller kassir3 = new Seller("", "", 0, "");
+                System.out.println("Новый кассира нанят на работу.");
+                break;
+            case "W":
+                Worker worker1 = new Worker("", "", 0, "");
+                System.out.println("Новый грузчик нанят на работу.");
+                break;
+        }
+    }
+
+    public void promotion() {
+        System.out.println("Повысить сотрудника.");
+    }
+
+    public void fire() {
+        System.out.println("Уволить сотрудника.");
+    }
+
+    public void executionOfDocuments() {
+        System.out.println("Работа с документацией.");
     }
 
     @Override
@@ -47,3 +59,4 @@ public class Director extends Personal implements ActionsWithPersonnel {
         System.out.println("Принятие платежей.");
     }
 }
+
