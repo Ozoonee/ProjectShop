@@ -6,6 +6,13 @@ public abstract class Products {
     private double cost;
     private double weight;
 
+    public Products(String name, String countryOfManufacture, double cost, double weight) {
+        this.name = name;
+        this.countryOfManufacture = countryOfManufacture;
+        this.cost = cost;
+        this.weight = weight;
+    }
+
     public String getName() {
         return name;
     }
@@ -35,13 +42,6 @@ public abstract class Products {
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public Products(String name, String countryOfManufacture, double cost, double weight) {
-        this.name = name;
-        this.countryOfManufacture = countryOfManufacture;
-        this.cost = cost;
         this.weight = weight;
     }
 

@@ -5,6 +5,13 @@ public class Fruits extends Products {
     String color;
     String packing;
 
+    public Fruits(String name, String countryOfManufacture, double cost, double weight, String sort, String color, String packing) {
+        super(name, countryOfManufacture, cost, weight);
+        this.sort = sort;
+        this.color = color;
+        this.packing = packing;
+    }
+
     public String getSort() {
         return sort;
     }
@@ -26,13 +33,6 @@ public class Fruits extends Products {
     }
 
     public void setPacking(String packing) {
-        this.packing = packing;
-    }
-
-    public Fruits(String name, String countryOfManufacture, double cost, double weight, String sort, String color, String packing) {
-        super(name, countryOfManufacture, cost, weight);
-        this.sort = sort;
-        this.color = color;
         this.packing = packing;
     }
 

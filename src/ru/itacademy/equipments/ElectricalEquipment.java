@@ -8,6 +8,15 @@ public abstract class ElectricalEquipment {
     int networkPowerSupply;
     double weight;
 
+    public ElectricalEquipment(String vendor, String type, String name, int powerConsumption, int networkPowerSupply, double weight) {
+        this.vendor = vendor;
+        this.type = type;
+        this.name = name;
+        this.powerConsumption = powerConsumption;
+        this.networkPowerSupply = networkPowerSupply;
+        this.weight = weight;
+    }
+
     public String getVendor() {
         return vendor;
     }
@@ -53,15 +62,6 @@ public abstract class ElectricalEquipment {
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public ElectricalEquipment(String vendor, String type, String name, int powerConsumption, int networkPowerSupply, double weight) {
-        this.vendor = vendor;
-        this.type = type;
-        this.name = name;
-        this.powerConsumption = powerConsumption;
-        this.networkPowerSupply = networkPowerSupply;
         this.weight = weight;
     }
 

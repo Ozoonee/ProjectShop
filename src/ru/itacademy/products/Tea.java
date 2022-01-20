@@ -6,6 +6,14 @@ public class Tea extends Products {
     String color;
     String packing;
 
+    public Tea(String name, String countryOfManufacture, double cost, double weight, String type, String sort, String color, String packing) {
+        super(name, countryOfManufacture, cost, weight);
+        this.type = type;
+        this.sort = sort;
+        this.color = color;
+        this.packing = packing;
+    }
+
     public String getType() {
         return type;
     }
@@ -35,14 +43,6 @@ public class Tea extends Products {
     }
 
     public void setPacking(String packing) {
-        this.packing = packing;
-    }
-
-    public Tea(String name, String countryOfManufacture, double cost, double weight, String type, String sort, String color, String packing) {
-        super(name, countryOfManufacture, cost, weight);
-        this.type = type;
-        this.sort = sort;
-        this.color = color;
         this.packing = packing;
     }
 

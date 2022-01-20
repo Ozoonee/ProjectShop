@@ -4,6 +4,12 @@ public class PaymentTerminal extends ElectricalEquipment {
     String contactPayment;
     String contactlessPayment;
 
+    public PaymentTerminal(String vendor, String type, String name, int powerConsumption, int networkPowerSupply, double weight, String contactPayment, String contactlessPayment) {
+        super(vendor, type, name, powerConsumption, networkPowerSupply, weight);
+        this.contactPayment = contactPayment;
+        this.contactlessPayment = contactlessPayment;
+    }
+
     public String getContactPayment() {
         return contactPayment;
     }
@@ -17,12 +23,6 @@ public class PaymentTerminal extends ElectricalEquipment {
     }
 
     public void setContactlessPayment(String contactlessPayment) {
-        this.contactlessPayment = contactlessPayment;
-    }
-
-    public PaymentTerminal(String vendor, String type, String name, int powerConsumption, int networkPowerSupply, double weight, String contactPayment, String contactlessPayment) {
-        super(vendor, type, name, powerConsumption, networkPowerSupply, weight);
-        this.contactPayment = contactPayment;
         this.contactlessPayment = contactlessPayment;
     }
 

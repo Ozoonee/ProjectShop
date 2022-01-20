@@ -5,6 +5,12 @@ public class Buyer {
     int age;
     int purchasingPower;
 
+    public Buyer(String gender, int age, int purchasingPower) {
+        this.gender = gender;
+        this.age = age;
+        this.purchasingPower = purchasingPower;
+    }
+
     public String getGender() {
         return gender;
     }
@@ -26,12 +32,6 @@ public class Buyer {
     }
 
     public void setPurchasingPower(int purchasingPower) {
-        this.purchasingPower = purchasingPower;
-    }
-
-    public Buyer(String gender, int age, int purchasingPower) {
-        this.gender = gender;
-        this.age = age;
         this.purchasingPower = purchasingPower;
     }
 

@@ -4,6 +4,12 @@ public class Fridge extends ElectricalEquipment {
     String operatingMode;
     int coolingTemperature;
 
+    public Fridge(String vendor, String type, String name, int powerConsumption, int networkPowerSupply, double weight, String operatingMode, int coolingTemperature) {
+        super(vendor, type, name, powerConsumption, networkPowerSupply, weight);
+        this.operatingMode = operatingMode;
+        this.coolingTemperature = coolingTemperature;
+    }
+
     public String getOperatingMode() {
         return operatingMode;
     }
@@ -17,12 +23,6 @@ public class Fridge extends ElectricalEquipment {
     }
 
     public void setCoolingTemperature(int coolingTemperature) {
-        this.coolingTemperature = coolingTemperature;
-    }
-
-    public Fridge(String vendor, String type, String name, int powerConsumption, int networkPowerSupply, double weight, String operatingMode, int coolingTemperature) {
-        super(vendor, type, name, powerConsumption, networkPowerSupply, weight);
-        this.operatingMode = operatingMode;
         this.coolingTemperature = coolingTemperature;
     }
 

@@ -7,6 +7,13 @@ public abstract class Personal {
     private int age;
     private String education;
 
+    public Personal(String name, String gender, int age, String education) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.education = education;
+    }
+
     public String getGender() {
         return gender;
     }
@@ -37,13 +44,6 @@ public abstract class Personal {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Personal(String name, String gender, int age, String education) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.education = education;
     }
 
     public abstract void greeting();
