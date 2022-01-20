@@ -6,24 +6,44 @@ public class Director extends Personal implements ActionsWithPersonnel {
         super(name, gender, age, education);
     }
 
-    @Override
-    public void greeting() {
-        System.out.println("Привет, меня зовут " + getName());
+    public void hire() {
+        System.out.println("Нанять на работу нового сотрудника");
     }
 
-    private void promotion() {
+    public void promotion() {
         System.out.println("Повысить сотрудника");
     }
 
-    private void fire() {
+    public void fire() {
         System.out.println("Уволить сотрудника");
     }
 
-    @Override
-    public Director createNewDirector() {
-        Director director = new Director("Екатерина", "female", 25, "HighSchool");
-        return director;
+    public void executionOfDocuments() {
+        System.out.println("Работа с документацией");
     }
-     public void test(){
+
+    @Override
+    public void greeting() {
+        System.out.println("Добрый день, меня зовут " + getName() + ", я директор этого магазина.");
+    }
+
+    @Override
+    public void work() {
+        System.out.println("Я работаю, не мешай!");
+    }
+
+    @Override
+    public void takeVacation() {
+        System.out.println("Пора на Мальдивы.");
+    }
+
+    @Override
+    public void toSell() {
+        System.out.println("Работа за кассой.");
+    }
+
+    @Override
+    public void acceptingPayments() {
+        System.out.println("Принятие платежей.");
     }
 }

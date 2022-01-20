@@ -1,5 +1,8 @@
 package ru.itacademy.collaborators;
 
 public interface ActionsWithPersonnel {
-    Director createNewDirector();
+     void work();
+     void takeVacation();
+     void toSell();
+     void acceptingPayments();
 }

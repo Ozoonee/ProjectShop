@@ -7,7 +7,7 @@ public class Worker extends Personal {
         super(name, gender, age, education);
     }
 
-    Worker mover = new Worker("Ivan", "male", 40, "Middle school");
+
 
     @Override
     public void greeting() {

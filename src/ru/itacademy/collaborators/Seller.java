@@ -5,7 +5,6 @@ public class Seller extends Personal {
         super(name, gender, age, education);
     }
 
-    Seller kassir = new Seller("Dasha", "female", 22, "proffessional");
 
     @Override
     public void greeting() {
