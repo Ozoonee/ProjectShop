@@ -13,12 +13,13 @@ public class Advertisement {
 
     private static String[] advertisement = {ad1, ad2, ad3, ad4, ad5};
 
-    public static void ad() {
+    public static void ad() throws InterruptedException {
         SimpleDateFormat formatter = new SimpleDateFormat("dd MMMM, EEEE HH:mm");
         Date date = new Date();
         if (date.getHours() <= 21 && date.getHours() >= 8) {
             for (int i = 0; i < advertisement.length; i++) {
                 System.out.println(advertisement[i]);
+                Thread.sleep(5000);
             }
         }
     }
