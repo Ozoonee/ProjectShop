@@ -10,6 +10,20 @@ public class Fridge extends ElectricalEquipment {
         this.coolingTemperature = coolingTemperature;
     }
 
+    public void cooling() {
+        System.out.println("Охладить");
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Включить холодильник");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("Выключить холодильник");
+    }
+
     public String getOperatingMode() {
         return operatingMode;
     }
@@ -24,19 +38,5 @@ public class Fridge extends ElectricalEquipment {
 
     public void setCoolingTemperature(int coolingTemperature) {
         this.coolingTemperature = coolingTemperature;
-    }
-
-    @Override
-    public void turnOn() {
-        System.out.println("Включить холодильник");
-    }
-
-    @Override
-    public void turnOff() {
-        System.out.println("Выключить холодильник");
-    }
-
-    public void cooling() {
-        System.out.println("Охладить");
     }
 }

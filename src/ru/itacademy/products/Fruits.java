@@ -1,15 +1,30 @@
 package ru.itacademy.products;
 
 public class Fruits extends Products {
-    String sort;
-    String color;
-    String packing;
+    private String sort;
+    private String color;
+    private String packing;
 
     public Fruits(String name, String countryOfManufacture, double cost, double weight, String sort, String color, String packing) {
         super(name, countryOfManufacture, cost, weight);
         this.sort = sort;
         this.color = color;
         this.packing = packing;
+    }
+
+    @Override
+    void buy() {
+        System.out.println("Купить товар");
+    }
+
+    @Override
+    void putInTheBasket() {
+        System.out.println("Положить товар в корзину");
+    }
+
+    @Override
+    void readTheInformation() {
+        System.out.println("Прочитать информацию о товаре");
     }
 
     public String getSort() {
@@ -34,20 +49,5 @@ public class Fruits extends Products {
 
     public void setPacking(String packing) {
         this.packing = packing;
-    }
-
-    @Override
-    void buy() {
-        System.out.println("Купить товар");
-    }
-
-    @Override
-    void putInTheBasket() {
-        System.out.println("Положить товар в корзину");
-    }
-
-    @Override
-    void readTheInformation() {
-        System.out.println("Прочитать информацию о товаре");
     }
 }

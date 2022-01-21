@@ -17,6 +17,10 @@ public abstract class ElectricalEquipment {
         this.weight = weight;
     }
 
+    public abstract void turnOn();
+
+    public abstract void turnOff();
+
     public String getVendor() {
         return vendor;
     }
@@ -64,9 +68,5 @@ public abstract class ElectricalEquipment {
     public void setWeight(double weight) {
         this.weight = weight;
     }
-
-    public abstract void turnOn();
-
-    public abstract void turnOff();
 
 }

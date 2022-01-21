@@ -14,6 +14,21 @@ public class Tea extends Products {
         this.packing = packing;
     }
 
+    @Override
+    void buy() {
+        System.out.println("Купить товар");
+    }
+
+    @Override
+    void putInTheBasket() {
+        System.out.println("Положить товар в корзину");
+    }
+
+    @Override
+    void readTheInformation() {
+        System.out.println("Прочитать информацию о товаре");
+    }
+
     public String getType() {
         return type;
     }
@@ -46,20 +61,6 @@ public class Tea extends Products {
         this.packing = packing;
     }
 
-    @Override
-    void buy() {
-        System.out.println("Купить товар");
-    }
-
-    @Override
-    void putInTheBasket() {
-        System.out.println("Положить товар в корзину");
-    }
-
-    @Override
-    void readTheInformation() {
-        System.out.println("Прочитать информацию о товаре");
-    }
 }
 
 

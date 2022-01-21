@@ -14,6 +14,8 @@ public abstract class Personal {
         this.education = education;
     }
 
+    public abstract void greeting();
+
     public String getGender() {
         return gender;
     }
@@ -46,5 +48,4 @@ public abstract class Personal {
         this.name = name;
     }
 
-    public abstract void greeting();
 }

@@ -11,6 +11,14 @@ public class Buyer {
         this.purchasingPower = purchasingPower;
     }
 
+    public void spendsMoney() {
+        System.out.println("Совершать покупки");
+    }
+
+    public void makeCommentAndSuggestions() {
+        System.out.println("Вносить замечания и предложения по работе магазина");
+    }
+
     public String getGender() {
         return gender;
     }
@@ -35,11 +43,4 @@ public class Buyer {
         this.purchasingPower = purchasingPower;
     }
 
-    public void spendsMoney() {
-        System.out.println("Тратить деньги ");
-    }
-
-    public void makeCommentAndSuggestions() {
-        System.out.println("Вносить замечания и предложения по работе магазина");
-    }
 }

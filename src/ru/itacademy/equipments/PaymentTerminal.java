@@ -10,6 +10,20 @@ public class PaymentTerminal extends ElectricalEquipment {
         this.contactlessPayment = contactlessPayment;
     }
 
+    @Override
+    public void turnOn() {
+        System.out.println("Включить терминал оплаты");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("Выключить терминал оплаты");
+    }
+
+    public void conductingTransactions() {
+        System.out.println("Проведение транзакций");
+    }
+
     public String getContactPayment() {
         return contactPayment;
     }
@@ -24,19 +38,5 @@ public class PaymentTerminal extends ElectricalEquipment {
 
     public void setContactlessPayment(String contactlessPayment) {
         this.contactlessPayment = contactlessPayment;
-    }
-
-    @Override
-    public void turnOn() {
-        System.out.println("Включить терминал оплаты");
-    }
-
-    @Override
-    public void turnOff() {
-        System.out.println("Выключить терминал оплаты");
-    }
-
-    public void conductingTransactions() {
-        System.out.println("Проведение транзакций");
     }
 }
